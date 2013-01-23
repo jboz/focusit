@@ -1,0 +1,213 @@
+/* Reset CSS */ 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }  /* remember to define focus styles! */ :focus {  outline: 0; }  /* remember to highlight inserts somehow! */ ins { text-decoration: none; } del { text-decoration: line-through; }  /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: collapse; border-spacing: 0; }
+
+/* Page CSS */
+
+html, body{
+	width:100%; height: 100%;
+}
+
+body{
+	background: url(../img/bg.png);
+	min-height: 300px;
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 2){
+		body{
+			background-size: 320px 320px;
+		}
+	}
+
+div{
+	display: block;
+	position: absolute;
+	height: 300px; width: 650px;
+	background: url(../img/glow.png) no-repeat;
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 2){
+		div {
+			background-image: url(../img/glow@2x.png);
+			background-size: 650px 182px;
+		}
+	}
+	@media screen and (min-width: 650px) and  (min-height: 321px){
+		div {
+			left: 50%; top:50%;
+			background-position: 0px 118px;
+			margin: -150px 0 0 -325px;
+		}
+	}	
+	@media screen and (min-width: 650px) and  (max-height: 320px){
+		div {
+			background-position: 0px 118px;
+			left: 50%;
+			margin: 20px 0 0 -325px;
+		}
+	}
+	@media screen and (min-width: 480px) and  (max-width: 651px) and  (min-height: 321px){
+		div {
+			width: 100%;
+			top:50%; left:0%;
+			background-position: center 118px;
+			margin: -150px 0 0 0px;
+		}
+	}
+	@media screen and (min-width: 480px) and  (max-width: 651px) and (max-height: 320px){
+		div {
+			width: 100%;
+			margin-top: 20px;
+			background-position: center 118px;
+		}
+	}
+	@media screen and (max-width: 479px){
+		div {
+			width: 100%; height: 356px;
+			overflow: hidden;
+			background-position: center 186px;
+		}
+	}
+	
+h1{
+	display: block;
+	margin: 0 auto;	
+	}
+	h1 a{
+		margin: 0 auto;	
+		display: block;
+		text-indent: -99999em;
+		cursor: pointer;
+		background-repeat: no-repeat;
+	}
+	@media screen and (min-width: 480px) {
+		h1 a{
+			width: 490px; height: 170px;
+			background: url(../img/application_creator.png) no-repeat;
+		}
+	}
+	@media screen and (max-width: 479px) {
+		h1 a{
+			width: 100%; height: 229px;
+			background-image: url(../img/application_creator_mobile.png);
+			background-position:  center 25px;
+		}
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px){
+		h1 a{
+			background-image: url(../img/application_creator@2x.png);
+				width: 490px; height: 170px;
+		}
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 479px){
+		h1 a{
+			background-image: url(../img/application_creator_mobile@2x.png);
+			background-size: 189px 194px;
+		}
+	}
+	
+ul{
+	display: block;
+	width: 356px;
+	margin: 22px auto 0 auto;	
+	}
+	@media screen and (max-width: 386px){
+		ul{
+			width: 251px;
+		}
+	}
+	ul li{
+		float: left;
+		}
+		ul li.divider{
+			width: 1px; height: 35px;
+			display: block;
+			margin-right: 15px;
+			background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); 
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%); 
+			background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%); 
+		}
+		ul li a{
+			display: block;
+			text-indent: -99999em;
+			background-image: url(../img/buttons.png);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			width: 35px; height: 35px;
+			cursor: pointer;
+			margin-right: 15px;
+			-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75);
+			box-shadow: 0 1px 1px rgba(0,0,0,0.75);
+			}
+			@media screen and (-webkit-min-device-pixel-ratio: 2){
+				ul li a{
+					background-image: url(../img/buttons@2x.png);
+					background-size: 340px 80px;
+				}
+			}
+			ul li a:hover{
+				-webkit-animation-name: glow;
+				-webkit-animation-duration: 0.8s;
+				-webkit-animation-timing-function: ease-in-out;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-name: glow;
+				-moz-animation-duration: 0.8s;
+				-moz-animation-timing-function: ease-in-out;
+				-moz-animation-iteration-count: infinite;
+				animation-name: glow;
+				animation-duration: 0.8s;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
+			}
+			@-webkit-keyframes glow {
+				from { -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20); }
+				50% { -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.40); }
+				to { -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20); }
+			}				
+			@-moz-keyframes glow {
+				from { -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20);  box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20); }
+				50% { -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.40); box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.40); }
+				to { -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20); box-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 10px rgba(255,255,255,0.20); }
+			}
+			ul li a#twitter{
+				background-position: 0px 0px;
+				}
+				ul li a#twitter:hover{
+					background-position: 0px -40px;
+				}
+			ul li a#dribbble{
+				background-position: -40px 0px;
+				}
+				ul li a#dribbble:hover{
+					background-position: -40px -40px;
+				}
+			ul li a#facebook{
+				background-position: -80px 0px;
+				}
+				ul li a#facebook:hover{
+					background-position: -80px -40px;
+				}
+			ul li a#contact{
+				background-position: -120px 0px;
+				width: 140px;
+				}
+				ul li a#contact:hover{
+					background-position: -120px -40px;
+				}
+				@media screen and (max-width: 386px){
+					ul li a#contact{
+						width: 35px;
+						background-position: -305px 0px;
+						}
+						ul li a#contact:hover{
+							background-position: -305px -40px;
+						}
+				}
+			ul li a#github{
+				background-position: -265px 0px;
+				margin-right: 0px;
+				}
+				ul li a#github:hover{
+					background-position: -265px -40px;
+				}
+				
