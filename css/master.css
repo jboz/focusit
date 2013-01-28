@@ -23,12 +23,12 @@ div{
 	height: 300px; width: 650px;
 	background: url(../img/glow.png) no-repeat;
 	}
-	@media screen and (-webkit-min-device-pixel-ratio: 2){
+	/*@media screen and (-webkit-min-device-pixel-ratio: 2){
 		div {
 			background-image: url(../img/glow@2x.png);
 			background-size: 650px 182px;
 		}
-	}
+	}*/
 	@media screen and (min-width: 650px) and  (min-height: 321px){
 		div {
 			left: 50%; top:50%;
@@ -62,7 +62,7 @@ div{
 		div {
 			width: 100%; height: 356px;
 			overflow: hidden;
-			background-position: center 186px;
+			background-position: center 195px;
 		}
 	}
 	
@@ -85,12 +85,12 @@ h1{
 	}
 	@media screen and (max-width: 479px) {
 		h1 a{
-			width: 100%; height: 229px;
-			background-image: url(../img/application_creator_mobile.png);
+			width: 100%; height: 246px;
+			background-image: url(../img/application_developper_phone.png);
 			background-position:  center 25px;
 		}
 	}
-	@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px){
+	/*@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px){
 		h1 a{
 			background-image: url(../img/application_creator@2x.png);
 				width: 490px; height: 170px;
@@ -101,7 +101,7 @@ h1{
 			background-image: url(../img/application_creator_mobile@2x.png);
 			background-size: 189px 194px;
 		}
-	}
+	}*/
 	
 ul{
 	display: block;
@@ -139,12 +139,12 @@ ul{
 			-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 			box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 			}
-			@media screen and (-webkit-min-device-pixel-ratio: 2){
+			/*@media screen and (-webkit-min-device-pixel-ratio: 2){
 				ul li a{
 					background-image: url(../img/buttons@2x.png);
 					background-size: 340px 80px;
 				}
-			}
+			}*/
 			ul li a:hover{
 				-webkit-animation-name: glow;
 				-webkit-animation-duration: 0.8s;
