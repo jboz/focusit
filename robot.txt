@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /js
+Disallow: /css
+Sitemap: https://www.ifocusit.fr/sitemap.xml
